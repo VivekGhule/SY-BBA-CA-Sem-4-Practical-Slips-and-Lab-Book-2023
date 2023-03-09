@@ -56,7 +56,7 @@ int main() {
 }
 
 
-// 3) Write a C++ program to reverse anumber
+// 3) Write a C++ program to reverse a number
 
 #include <iostream>
 
@@ -117,8 +117,8 @@ int main() {
 
 
 // 5) Write a C++ program to accept two integers and an arithmetic operator(+, -, *, /) from 
-// user and performs the corresponding arithmetic operation and display the result. (Use 
-// switch statement)
+// user and performs the corresponding arithmetic operation and display the result. (Use switch statement)
+
 
 #include <iostream>
 
