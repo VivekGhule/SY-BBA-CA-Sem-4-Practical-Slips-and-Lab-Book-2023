@@ -58,3 +58,34 @@ int main() {
 
 // 3)Write a C++ program to calculate area and circumference of a Circle. (Use default 
 // argument, scope resolution operator and manipulator.)
+
+#include <iostream>
+#include <iomanip> // for setprecision() manipulator
+using namespace std;
+
+class Circle {
+   private:
+    double radius;
+
+   public:
+    Circle(double r = 1.0) { radius = r; }
+    double getRadius() { return radius; }
+
+    double area() { return 3.14 * radius * radius; }
+
+    double circumference() { return 2 * 3.14 * radius; }
+};
+
+int main() {
+    double radius;
+    cout << "Enter the radius of the circle: ";
+    cin >> radius;
+
+    Circle c(radius);
+
+    cout << "The area of the circle is: " << setprecision(2) << fixed << c.area() << endl;
+    cout << "The circumference of the circle is: " << setprecision(2) << fixed << c.circumference() << endl;
+
+    return 0;
+}
+
